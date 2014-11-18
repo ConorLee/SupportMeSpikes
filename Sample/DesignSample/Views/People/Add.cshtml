@@ -1,0 +1,35 @@
+﻿@model SupportMe.Service.Model.Person
+
+@{
+    ViewBag.Title = "Add";
+    
+}
+
+<h2>Add Person</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Person</h4>
+        <hr />
+        @Html.EditorFor(m => m.Name)
+        @Html.EditorFor(m => m.EmailAddress)
+        @Html.EditorFor(m => m.TelephoneNumber)
+        @Html.EditorFor(m => m.Image)
+        @Html.EditorFor(m => m.Address)
+        
+        <input type="submit" name="action" value="Create" class="btn btn-default" />
+
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
