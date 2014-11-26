@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Navbar Static top Template</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project Name</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="individuals.html">Individuals</a></li>
+                    <li><a href="hostels.html">Hostels</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a data-toggle="dropdown" href="userMenu">Andrew Fletcher</a>
+                        <ul class="dropdown-menu" role="menu" id="userMenu">
+                            <li class="text-center">
+                                <img class="img-circle" src="holder.js/100x100">
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">Logged in as: Andrew Fletcher</a></li>
+                            <li><a href="account.html">Manage your account</a></li>
+                            <li class="divider"></li>
+                            <li><a href="logout.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Initial Presentation</h2>
+                <h4>Risk Assessment</h4>
+                <hr />
+
+                <form role="form">
+                    <p>Please select the options that apply:</p>
+
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                        To self
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <table class="table table-bordered table-hover table-responsive table-striped">
+                                        <tr>
+                                            <td>History</td>
+                                            <td>Current behavior</td>
+                                            <td>Risk level</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-group">
+                                                <input type="text" class="form-control" />
+                                            </td>
+                                            <td class="form-group">
+                                                <input type="text" class="form-control" />
+                                            </td>
+                                            <td class="form-group">
+                                                <label class="radio-inline">
+                                                    <input type="radio" id="inlineradio1" value="option1"> 1
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" id="inlineradio2" value="option2"> 2
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" id="inlineradio3" value="option3"> 3
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                        To others
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <table class="table table-bordered table-hover table-responsive table-striped">
+                                        <tr>
+                                            <td>History</td>
+                                            <td>Current behavior</td>
+                                            <td>Risk level</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-group">
+                                                <input type="text" class="form-control" />
+                                            </td>
+                                            <td class="form-group">
+                                                <input type="text" class="form-control" />
+                                            </td>
+                                            <td class="form-group">
+                                                <label class="radio-inline">
+                                                    <input type="radio" id="inlineradio1" value="option1"> 1
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" id="inlineradio2" value="option2"> 2
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" id="inlineradio3" value="option3"> 3
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                        From others
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <table class="table table-bordered table-hover table-responsive table-striped">
+                                        <tr>
+                                            <td>History</td>
+                                            <td>Current behavior</td>
+                                            <td>Risk level</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-group">
+                                                <input type="text" class="form-control" />
+                                            </td>
+                                            <td class="form-group">
+                                                <input type="text" class="form-control" />
+                                            </td>
+                                            <td class="form-group">
+                                                <label class="radio-inline">
+                                                    <input type="radio" id="inlineradio1" value="option1"> 1
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" id="inlineradio2" value="option2"> 2
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" id="inlineradio3" value="option3"> 3
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                        To Project
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFoue" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <table class="table table-bordered table-hover table-responsive table-striped">
+                                        <tr>
+                                            <td>History</td>
+                                            <td>Current behavior</td>
+                                            <td>Risk level</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="form-group">
+                                                <input type="text" class="form-control" />
+                                            </td>
+                                            <td class="form-group">
+                                                <input type="text" class="form-control" />
+                                            </td>
+                                            <td class="form-group">
+                                                <label class="radio-inline">
+                                                    <input type="radio" id="inlineradio1" value="option1"> 1
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" id="inlineradio2" value="option2"> 2
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" id="inlineradio3" value="option3"> 3
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <a class="btn btn-default" href="ip-5.html">Next</a>
+                </form>
+
+            </div>
+        </div>
+
+    </div><!-- /.container -->
+    <!-- script references -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="Scripts/jquery-1.9.0.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>

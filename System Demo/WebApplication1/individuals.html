@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Navbar Static top Template</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="Content/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+<div class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project Name</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="individuals.html">Individuals</a></li>
+        <li><a href="hostels.html">Hostels</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a data-toggle="dropdown" href="userMenu">Andrew Fletcher</a>
+                <ul class="dropdown-menu" role="menu" id="userMenu">
+                    <li class="text-center">
+                        <img class="img-circle" src="holder.js/100x100">
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#">Logged in as: Andrew Fletcher</a></li>
+                    <li><a href="account.html">Manage your account</a></li>
+                    <li class="divider"></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+<div class="container">
+  
+    <h2>Individuals</h2>
+
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        <span class="glyphicon glyphicon-search"></span>   Search for Individuals
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="name">Full name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Full name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="suNumber">Service User Number</label>
+                                    <input type="text" class="form-control" id="suNumber" placeholder="Service user number">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="dob">Date of birth</label>
+                                    <input type="date" class="form-control" id="dob" placeholder="dd/mm/yyyy">
+                                </div>
+                                <div class="form-group">
+                                    <label for="startDate">Date joined</label>
+                                    <input type="date" class="form-control" id="startDate" placeholder="Join date">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date of birth</th>
+                <th>City</th>
+                <th>Area</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Smith</td>
+                <td>21/03/1978</td>
+                <td>Belfast</td>
+                <td>Malone</td>
+                <td><span class="glyphicon glyphicon-user"></span>  <a href="profile.html">View Profile</a></td>
+            </tr>
+            <tr>
+                <td>Joseph Smith</td>
+                <td>05/04/1978</td>
+                <td>Belfast</td>
+                <td>Malone</td>
+                <td><span class="glyphicon glyphicon-user"></span>  <a href="profile.html">View Profile</a></td>
+            </tr>
+            <tr>
+                <td>Tamara Watson</td>
+                <td>10/03/1978</td>
+                <td>Belfast</td>
+                <td>Malone</td>
+                <td><span class="glyphicon glyphicon-user"></span>  <a href="profile.html">View Profile</a></td>
+            </tr>
+            <tr>
+                <td>Bill Kane</td>
+                <td>21/09/1992</td>
+                <td>Belfast</td>
+                <td>Malone</td>
+                <td><span class="glyphicon glyphicon-user"></span>  <a href="profile.html">View Profile</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="center-block">
+
+        <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+
+    </div>
+
+</div><!-- /.container -->
+	<!-- script references -->
+		<script src="Scripts/jquery-1.9.0.js"></script>
+		<script src="Scripts/bootstrap.js"></script>
+		<script src="Scripts/holder.js"></script>
+        <script src="Scripts/custom.js"></script>
+	</body>
+</html>
